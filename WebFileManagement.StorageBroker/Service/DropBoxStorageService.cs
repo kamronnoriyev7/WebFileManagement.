@@ -1,6 +1,6 @@
 namespace WebFileManagement.StorageBroker.Service;
 
-public class AwsStorageService:IStorageService
+public class DropBoxStorageService: IStorageService
 {
     
 }
