@@ -1,6 +1,6 @@
 namespace WebFileManagement.StorageBroker.Service;
 
-public class AwsStorageService:IStorageBrokerService
+public class AwsStorageService
 {
     public void UploadFile(string fileName, Stream fileStream)
     {
@@ -13,6 +13,16 @@ public class AwsStorageService:IStorageBrokerService
     }
 
     public Stream DownloadFile(string fileName)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Stream DownloadFileAsZip(string filePath)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Delete(string filePath)
     {
         throw new NotImplementedException();
     }

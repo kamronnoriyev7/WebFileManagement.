@@ -1,6 +1,6 @@
 namespace WebFileManagement.StorageBroker.Service;
 
-public class AzureStorageService: IStorageBrokerService
+public class AzureStorageService
 {
     public void UploadFile(string fileName, Stream fileStream)
     {
@@ -13,6 +13,16 @@ public class AzureStorageService: IStorageBrokerService
     }
 
     public Stream DownloadFile(string fileName)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Stream DownloadFileAsZip(string filePath)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Delete(string filePath)
     {
         throw new NotImplementedException();
     }
